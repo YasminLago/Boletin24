@@ -28,13 +28,14 @@ public class Ventana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTable1 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         bNuevo = new javax.swing.JButton();
         bGuardar = new javax.swing.JButton();
         bModificar = new javax.swing.JButton();
         bEliminar = new javax.swing.JButton();
         bCancelar = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        bSalir = new javax.swing.JButton();
         lNumDev = new javax.swing.JLabel();
         lCod = new javax.swing.JLabel();
         lArt = new javax.swing.JLabel();
@@ -51,10 +52,20 @@ public class Ventana extends javax.swing.JFrame {
         lPrecioUn = new javax.swing.JLabel();
         lTotal = new javax.swing.JLabel();
         lObs = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "", "", "", "", ""
+            }
+        ));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Devoluciones Cliente");
@@ -74,8 +85,8 @@ public class Ventana extends javax.swing.JFrame {
         bCancelar.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         bCancelar.setText("Cancelar");
 
-        jButton6.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jButton6.setText("Salir");
+        bSalir.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        bSalir.setText("Salir");
 
         lNumDev.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lNumDev.setText("Nº devolucion");
@@ -112,6 +123,10 @@ public class Ventana extends javax.swing.JFrame {
         lObs.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         lObs.setText("Observaciones");
 
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -121,11 +136,6 @@ public class Ventana extends javax.swing.JFrame {
                 "", "", "", "", ""
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -146,7 +156,7 @@ public class Ventana extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(bCancelar)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(bSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGap(12, 12, 12)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -236,7 +246,7 @@ public class Ventana extends javax.swing.JFrame {
                         .addComponent(bNuevo)
                         .addComponent(bGuardar))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton6)
+                        .addComponent(bSalir)
                         .addComponent(bCancelar)
                         .addComponent(bEliminar)
                         .addComponent(bModificar)))
@@ -302,8 +312,8 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JButton bGuardar;
     private javax.swing.JButton bModificar;
     private javax.swing.JButton bNuevo;
+    private javax.swing.JButton bSalir;
     private javax.swing.JComboBox cArt;
-    private javax.swing.JButton jButton6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
